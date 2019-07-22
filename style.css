@@ -1,0 +1,445 @@
+*  {
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+
+html {
+        height: 100%
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	color: #333;
+	background: #F5F5F5;
+        font-size: 1em;
+	font-family: Proxima, sans-serif;
+        line-height: 100%;
+        overflow-x: hidden;
+}
+
+.head, .menu {
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+}
+
+#mobile_search, #mobile_menu {
+        display: none;
+}
+
+@media (max-width: 1367px) {
+        .head, footer, .menu {
+                display: flex; 
+                justify-content: space-between;      
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 0;
+        }
+}
+
+@media only screen and (max-width: 640px) {
+        .menu, .left_buttons, .right_buttons, .footer_menu, .footer_menu2, #copyright {
+                display: none;
+        }
+
+        #mobile_search {
+                display: block;
+        }
+
+        #logo {
+                position: absolute;
+                left: 40%;
+        }
+
+        #mobile_menu {
+                position: absolute;
+                left: 90%;
+		display: block;
+        }
+        
+        .container div {
+                float: left;
+                margin: 14px;
+                height: auto;
+                min-height: 480px;
+                text-align: center;
+                background-color: white;
+                flex: 2;
+        }
+}
+
+header nav {
+        display: flex;
+        height: 70px;
+        width: 100%;
+        background: #212121;
+        position: relative;
+        left: 0;
+}
+
+#logo {
+	font-weight: 900;
+        font-size: 45px;
+        line-height: 40px;
+        font-stretch: ultra-expanded;
+}
+
+#authorization {
+        background-color: #47B3AC;
+        font-weight: bold;
+        border-radius: 20px;
+        line-height: 30px;
+        height: 30px;
+        margin-top: 10px;
+}
+
+ul {
+        position: relative;
+        width: 1230px;
+        margin-left: 315px;
+        padding: 0;
+        list-style: none;
+        margin-top: 10px;
+}
+
+@media (max-width: 1367px) {
+        ul {
+                margin: auto;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-top: 10px;
+                flex-flow: row wrap;
+        }
+}
+
+ul li {
+        float: left;
+}
+
+.head ul li a {
+        color: white;
+        display: block;
+        height: 50px;
+        padding: 0 15px;
+        line-height: 50px;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 14px;
+}
+
+.head ul li a:hover {
+        color: #20B2AA;
+	text-decoration: none;
+}
+
+.head ul li #authorization:hover {
+        color: white;
+}
+
+.menu ul li a:hover {
+        color: #20B2AA;
+	text-decoration: none;
+}
+
+.footer_menu ul li a:hover {
+        color: #20B2AA;
+	text-decoration: none;
+}
+
+.footer_menu2 ul li a:hover {
+        color: #20B2AA;
+	text-decoration: none;
+}
+
+.menu ul li a {
+        color: black;
+        display: block;
+        height: 50px;
+        padding: 0 10px;
+        line-height: 50px;
+        text-decoration: none;
+}
+
+.menu a.blogs {	
+	font-weight: bold;
+	color:#20B2AA;
+}
+
+.footer_menu a.blogs {	
+	font-weight: bold;
+	color:#20B2AA;
+}
+
+.right_buttons {     
+        float: right;
+        width: auto;
+        font-size: 14px; 
+}
+
+.container {
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 1230px;
+        margin-left: 315px;
+}
+
+@media (max-width: 1367px) {
+        .container {
+                flex-wrap: wrap;
+                flex-flow: row wrap;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                width: auto;
+                margin-left: auto;
+        }
+}
+
+@media only screen and (max-width: 640px) {
+        .container {
+                flex-wrap: wrap;
+                flex-flow: row wrap;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                width: auto;
+                margin-top: -20px;
+                margin-left: 20px;
+                margin-right: 20px;
+        }
+}
+
+.container div {
+        float: left;
+        margin: 14px;
+        height: 440px;
+        text-align: center;
+        background-color: white;
+}
+
+.container h3 {
+	color: #FE4444;
+	font-size: 12px;
+        font-weight: bold;
+        padding: 5px 0;
+}
+
+.container a {
+        text-decoration: none;
+}
+
+.container p {
+	font-weight: bold;
+        color: black;
+        height: 150px;
+        font-size: 20px;
+        padding: 5px 0;
+}
+
+.container img {
+        width: 279px;
+        height: 220px;
+}
+
+#read_time {
+        color: #888888;
+        font-weight: 600;
+        font-size: 13px;
+}
+
+@media only screen and (max-width: 640px) {
+        .container img {
+                width: 480px;
+                height: 400px;;
+        }
+
+        .container p {
+                font-weight: bold;
+                color: black;
+                height: auto;
+        }
+}
+
+.container a p:hover {
+        color: #20B2AA;
+	text-decoration: none;
+}
+
+#more_articles button {
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 40px;
+        border: none;
+        height: 50px;
+        background: #20B2AA;
+        color: white;
+        width: 200px;
+        cursor: pointer;
+}
+
+footer {
+        height: 665px;
+        background-color: #333; 
+        align-items: center;
+        text-align: center;
+}
+
+@media only screen and (max-width: 640px) {
+        footer {
+                height: 400px;
+                background-color: #333; 
+                align-items: center;
+                text-align: center;
+        }
+}
+
+.e-mail {
+        width: 100%;
+        height: 300px;
+        background-image: url(img/2.png);
+        background-size: 100% 100%;
+        display: flex;
+        justify-content: center; 
+}
+
+@media only screen and (max-width: 640px) {
+        .e-mail {
+                width: 100%;
+                height: 200px;
+                background-image: url(img/2.png);
+                background-size: 100% 100%;
+                display: flex;
+                justify-content: center; 
+        }
+}
+
+.e-mail ul {
+        position: relative; 
+        top: 80px;
+        margin: 0%;
+}
+
+@media only screen and (max-width: 640px) {
+        .e-mail ul {
+                position: relative; 
+                top: 30px;
+                margin: 0%;
+        }
+}
+
+.e-mail ul li {
+        float: none;
+        display: flex;
+        justify-content: center;
+}
+
+#e-mail_head {
+        position: relative;
+        font-size: 30px;
+        color: white;
+        text-align: center;
+        font-weight: bold;
+} 
+
+#e-mail_input {
+        position: relative;
+        width: 355px;
+        height: 40px;
+        border: none;
+        font-size: 14px;
+}
+
+.e-mail button {
+        border: none;
+        background: white;
+        color: #20B2AA;
+        width: 60px;
+        height: 40px;
+        cursor: pointer;
+}
+
+#e-mail_text {
+        position: relative;
+        font-size: 13px;
+        text-align: center;
+        color: white;
+        width: 400px;
+}
+
+.footer_menu ul {
+        position: relative;
+        display: flex;
+        justify-content: center;
+}
+
+.footer_menu ul li a {
+        position: relative;
+        color: white;
+        font-size: 15px;
+        height: 40px;
+        padding: 0 13px;
+        line-height: 40px;
+        text-decoration: none;
+}
+
+.footer_menu2 ul {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        width: 750px;
+        margin: auto;
+        text-align: center;
+}     
+
+.footer_menu2 ul li a {
+        position: relative;
+        color: grey;
+        font-size: 14px;
+        text-decoration: none;
+        text-align: center;
+        padding: 0 10px;
+        line-height: 25px;
+}
+
+.social ul {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+}
+
+@media only screen and (max-width: 640px) {
+        .social ul {
+                position: relative;
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                width: 300px;
+        }
+}
+
+.social ul li {
+        border: 1px solid #888888;
+	height: 45px;
+	width: 45px;
+        border-radius: 50%;
+        margin: 0 10px;
+}
+
+.social ul li a {
+        color: white;
+        font-size: 17px;
+        padding-top: 10px;
+}
+
+#copyright { 
+        color: white;
+        font-size: 14px;
+}
